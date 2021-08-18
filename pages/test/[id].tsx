@@ -26,7 +26,7 @@ export default function Test() {
     )
   }
 
-    const tryParse = parseInt(id, 10)
+  const tryParse = parseInt(id as string, 10)
   const followingId = isNaN(tryParse) ? `${id}_more` : tryParse + 1
 
     return (
