@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+
+export default function Test() {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,7 +15,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the Export Test
+          The Test Page
         </h1>
 
         <div className={styles.grid}>
@@ -32,17 +33,9 @@ export default function Home() {
             </a>
           </Link>
 
-          <Link href="/test/">
+          <Link href="/">
             <a className={styles.card}>
-              <h2>Test with Slash &rarr;</h2>
-              <p>The test homepage</p>
-            </a>
-          </Link>
-
-          <Link href="/test">
-            <a className={styles.card}>
-              <h2>Test without Slash &rarr;</h2>
-              <p>The test homepage</p>
+              <h2>Back Home &rarr;</h2>
             </a>
           </Link>
         </div>
